@@ -33,7 +33,7 @@ class MainWindow(QMainWindow):
         #Crée la barre d'outils a gauche
         toolbar = QToolBar("My main toolbar")
         toolbar.setMovable(False)
-        toolbar.setStyleSheet("background-color: #21252B;") #On decrit la fenetre en css
+        toolbar.setStyleSheet("background-color: #ecf1f1;") #On decrit la fenetre en css
         toolbar.setToolButtonStyle(Qt.ToolButtonIconOnly)
         toolbar.setIconSize(QSize(40, 40))
         self.addToolBar(Qt.LeftToolBarArea, toolbar)
@@ -62,8 +62,7 @@ class MainWindow(QMainWindow):
         )
         button_Run = QAction(QIcon(Logo_Run), "Éditeur de code", self)
         toolbar.addAction(button_Run)
-
-        self.setStatusBar(QStatusBar(self))
+        
 
 
 
